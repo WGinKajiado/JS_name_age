@@ -23,4 +23,4 @@ This project demonstrates concepts such as functions, conditionals, loops, forms
 
 
 ### Live Release
-<a href="https://wginkajiado.github.io/progress_report/">View Here</a># JS_name_age
+<a href="https://wginkajiado.github.io/JS_name_age/">View Here</a>
