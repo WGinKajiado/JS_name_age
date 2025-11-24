@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./styles.css" rel="stylesheet">
+        <title>Welcome</title>
+    </head>
+
+    <body class="text-green-600 bg-black">
+        <h1 id="welcomeMessage" class="font-Orbitron mt-20 text-center text-8xl"></h1>
+        <h2 id="ageInMonths" class="font-PressStart2P mt-15 text-center text-4xl ring-4 p-2"></h2>
+        <div id="quotesContainer" class="mt-20 text-center text-4xl"></div>
+
+        <script>
+            const username = localStorage.getItem("username");
+            const dob = localStorage.getItem("dob")
+
+            document.getElementById("welcomeMessage").textContent =
+                `Welcome, ${username}!`;
+
+            // Calculate age in months
+            const dobDate = new Date(dob);
+            const today = new Date();
+
+            let years = today.getFullYear() - dobDate.getFullYear();
+            let months = today.getMonth() - dobDate.getMonth();
+            let days = today.getDate() - dobDate.getDate();
+
+            if (days < 0) {
+                months--;
+            }
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            const totalMonths = years * 12 + months;
+
+            document.getElementById("ageInMonths").textContent = 
+                `Your age in months is: ${totalMonths} months.`;
+
+            // Motivational quote loop
+            const quotesContainer = document.getElementById("quotesContainer");
+            const quote = "If, at first, you do not succeed, call it version 1.0. ― Khayri R.R. Woulfe"
+
+            for (let i=0; i < 5; i++) {
+                const p = document.createElement("p");
+                p.textContent = quote;
+                quotesContainer.appendChild(p);
+            }
+
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./styles.css" rel="stylesheet">
+        <title>JAVASCRIPT - NAME & AGE</title>
+    </head>
+
+    <body  class="text-green-600 bg-black font-Orbitron">
+        <main class="min-h-screen flex justify-center items-center">
+            <div class="rounded-xl p-10 ring-4 shadow-green-500 shadow-2xl">
+                <form   id="myForm" 
+                        name="myForm" 
+                        action="#" 
+                        class="flex flex-col space-y-4">
+        
+                    <!-- name input field -->
+                    <div>
+                        <label for="name" class="text-4xl">Name:</label>
+                        <input  
+                            type="text" 
+                            id="name"
+                            name="name"
+                            placeholder="Input your name"
+                            class="p-2 text-4xl border border-dashed focus:outline-4"
+                            required
+                        >
+                    </div>
+                        
+                    <!-- date of birth input field -->
+                    <div>
+                        <label for="dob" class="text-4xl">Date of Birth:</label>
+                        <input  
+                            type="date" 
+                            id="dob"
+                            name="dob"
+                            class="p-2 ml-6 text-4xl border border-dashed focus:outline-4"
+                            required
+                        >
+                    </div>
+                    
+                    <button 
+                        type="submit" 
+                        name="submit" 
+                        value="submit"
+                        class="border-4 border-double p-2 text-2xl hover:bg-green-400"
+                    >
+                        Enter
+                    </button>
+                </form>
+            </div>
+        </main>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>
