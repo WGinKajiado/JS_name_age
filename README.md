@@ -13,6 +13,12 @@ This project demonstrates concepts such as functions, conditionals, loops, forms
 
 ---
 
+## Demo
+
+![image](https://github.com/WGinKajiado/JS_name_age/blob/main/assets/screenshot.jpg?raw=true)# index.html
+
+---
+
 ## Technologies Used
 
 - **HTML & CSS**  
